@@ -1,0 +1,7 @@
+{
+  "name": "pasteup-buttons",
+  "main": [
+    "_buttons.scss"
+  ],
+  "dependencies": {}
+}

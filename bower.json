@@ -14,6 +14,7 @@
   "dependencies": {
       "pasteup-palette": "git@github.com:guardian/pasteup-palette.git",
       "guss-typography": "git@github.com:guardian/guss-typography.git",
+      "guss-webfonts": "git@github.com:guardian/guss-webfonts.git",
       "guss-css3": "git@github.com:guardian/guss-css3.git"
   },
   "devDependencies": {

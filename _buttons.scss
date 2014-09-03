@@ -182,7 +182,7 @@ category: Common
     @include fs-textSans(2);
     font-weight: bold;
     text-decoration: none;
-    @include button-height(gs-height(1) - $gs-baseline / 2);
+    @include button-height($gs-baseline * 2.5);
     @include border-radius(50%);
     @include button-colour($c-newsAccent, #ffffff, $c-newsDefault);
 

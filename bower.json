@@ -1,7 +1,22 @@
 {
   "name": "pasteup-buttons",
-  "main": [
-    "_buttons.scss"
-  ],
-  "dependencies": {}
+  "version": "0.0.1",
+  "description": "pasteup-buttons",
+  "main": "_buttons.scss",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:guardian/pasteup-buttons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/guardian/pasteup-buttons/issues"
+  },
+  "homepage": "https://github.com/guardian/pasteup-buttons",
+  "dependencies": {
+      "pasteup-palette": "git@github.com:guardian/pasteup-palette.git"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-gh-pages": "^0.9.1"
+  }
 }

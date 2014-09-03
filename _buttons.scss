@@ -184,7 +184,7 @@ category: Common
     text-decoration: none;
     @include button-height($gs-baseline * 2.5);
     @include border-radius(50%);
-    @include button-colour($c-newsAccent, #ffffff, $c-newsDefault);
+    @include button-colour(guss-colour(tone-news-2, $pasteup-palette), #ffffff, guss-colour(tone-news-1, $pasteup-palette));
 
     &:hover,
     &:focus,
@@ -193,20 +193,20 @@ category: Common
     }
 }
 .button--primary {
-    @include button-colour($c-brandBlue, #ffffff, darken($c-newsDefault, 10%));
+    @include button-colour(guss-colour(guardian-brand, $pasteup-palette), #ffffff, darken(guss-colour(tone-news-1, $pasteup-palette), 10%));
 }
 .button--secondary {
-    @include button-colour($c-neutral2, #ffffff, $c-neutral1);
+    @include button-colour(guss-colour(neutral-2, $pasteup-palette), #ffffff, guss-colour(neutral-1, $pasteup-palette));
 }
 .button--tertiary {
-    @include button-colour(transparent, $c-neutral2, transparent, $c-neutral3);
-    border-color: $c-neutral3;
+    @include button-colour(transparent, guss-colour(neutral-2, $pasteup-palette), transparent, guss-colour(neutral-3, $pasteup-palette));
+    border-color: guss-colour(neutral-3, $pasteup-palette);
     
     &:hover,
     &:focus,
     &:active {
-        color: $c-neutral1;
-        border-color: $c-neutral1;
+        color: guss-colour(neutral-1, $pasteup-palette);
+        border-color: guss-colour(neutral-1, $pasteup-palette);
     }
 }
 .button--xlarge {

@@ -185,7 +185,8 @@ category: Common
     font-weight: bold;
     text-decoration: none;
     @include button-height($gs-baseline * 2.5);
-    @include border-radius(50%);
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
     @include button-colour(guss-colour(tone-news-2, $pasteup-palette), #ffffff, guss-colour(tone-news-1, $pasteup-palette));
 
     &:hover,

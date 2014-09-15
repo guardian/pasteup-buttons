@@ -40,6 +40,230 @@
  * @group colours
  */
 /**
+ * Charset
+ *
+ * - ascii: 256 characters only, very small
+ * - latin1: latin 1 character set
+ * - original: full character set
+ *
+ * @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Hinting
+ *
+ * - on: larger file, better rendering in Windows
+ * - off: smaller files, render well on HiDPI displays
+ *
+ *  @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Kerning
+ *
+ * - on: larger file, better rendering
+ * - off: smaller files
+ *
+ *  @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Base URL
+ * URL can be an absolute HTTP (`//pasteup.guim.co.uk/fonts/`) or relative (`../`)
+ *
+ * @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Complete path
+ *
+ * @requires {variable} guss-webfonts-charset
+ * @requires {variable} guss-webfonts-hinting
+ * @requires {variable} guss-webfonts-kerning
+ *
+ * @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Human-readable Font-weights
+ *
+ * @type Map
+ *
+ * @group webfonts
+ */
+/* Extra fonts
+   ========================================================================== */
+/**
+ * Extra fonts directory
+ *
+ * @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Extra fonts list
+ *
+ * @type List
+ *
+ * @group webfonts
+ */
+/* Font registry
+   ========================================================================== */
+/**
+ * Font registry
+ *
+ * @type Map
+ *
+ * @group webfonts
+ */
+/**
+ * Machine-readable CSS font-weight.
+ *
+ * @param {String} $keyword - Human-readable keyword in $guss-font-weights
+ *
+ * @requires {variable} guss-font-weights
+ *
+ * @example scss
+ * font-weight: guss-font-weight(light);
+ *
+ * @return {Number} - CSS font-weight
+ *
+ * @group webfonts
+ */
+/**
+ * Is this font stored in `$guss-extras-directory`?
+ *
+ * @param {String} $font-family - Font to look for
+ *
+ * @requires {variable} guss-webfonts-extras
+ *
+ * @return {Bool}
+ *
+ * @group webfonts
+ */
+/**
+ * Replace `$search` by `$replace` in `$string`.
+ *
+ * @author Hugo Giraudel
+ *
+ * @param {String} $string - string to update
+ * @param {String} $search - value to replace
+ * @param {String} $replace ('') - new value
+ *
+ * @return {String}
+ *
+ * @group webfonts
+ */
+/**
+ * Remove white space in $string
+ *
+ * @requires {function} str-replace
+ *
+ * @param {String} $string - string to update
+ *
+ * @return {String}
+ *
+ * @group webfonts
+ */
+/**
+ * Capitalise first letter of $string
+ *
+ * @param {String} $string - string to update
+ *
+ * @return {String}
+ *
+ * @group webfonts
+ */
+/**
+ * Compose webfont filename
+ *
+ * @param {String} $font-family - font family
+ * @param {String} $weight - weight, member of $guss-font-weights
+ * @param {String} $style - normal | italic
+ *
+ * @requires {function} str-capitalise
+ * @requires {function} str-remove-white-space
+ *
+ * @example scss
+ * src: url('compose-webfont-filename("Guardian Text Sans Web", bold, italic).woff');
+ * -> src: url("GuardianTextSansWeb-BoldItalic.eot");
+ *
+ * @return {String}
+ *
+ * @group webfonts
+ */
+/**
+ * Compose webfont path
+ * "My Font" is in the MyFont/ directory
+ * "Extra" fonts are stored in `$guss-extras-directory`.
+ *
+ * @param {String} $font-family - font name
+ *
+ * @requires {variable} guss-extras-directory
+ * @requires {variable} guss-webfonts-path
+ * @requires {function} str-remove-white-space
+ *
+ * @return {String} - Path to the font
+ *
+ * @group webfonts
+ */
+/**
+ * Look for `$needle` in `$haystack`.
+ *
+ * @param {List}   $haystack - List to search in
+ * @param {String} $needle - The string to look for
+ *
+ * @return {Bool}
+ *
+ * @group webfonts
+ */
+/**
+ * Output a @font-face declaration at root level.
+ *
+ * @param {String} $family - List to search in
+ * @param {String} $file - The filename
+ * @param {String} $base-path - Directory where the font is stored
+ * @param {Number} $weight (400) - CSS font-weight
+ * @param {String} $style (normal) - CSS font-style
+ * @param {String} $url ($guss-webfonts-base-url) - URL
+ *
+ * @requires {variable} guss-webfonts-base-url
+ *
+ * @group webfonts
+ */
+/**
+ * Output the @font-face declaration for a Guss webfont.
+ *
+ * @param {Number} $font-family - ID of the font in $guss-webfonts
+ * @param {Map} $properties - weight (member of `$guss-font-weights`), style (`normal` | `italic`)
+ * @param {Map} $overrides - weight (member of `$guss-font-weights`), style (`normal` | `italic`)
+ *
+ * @requires {variable} guss-webfonts
+ * @requires {function} compose-webfont-filename
+ * @requires {function} compose-webfont-path
+ * @requires {function} guss-font-weight
+ * @requires {mixin} guss-at-font-face
+ *
+ * @group webfonts
+ */
+/**
+ * Output the @font-face declaration for Guss webfonts.
+ *
+ * @param {String|List|Map} $fonts ($guss-webfonts) - Fonts to output
+ * @param {Map} $registry ($guss-webfonts) - Font registry
+ *
+ * @requires {variable} guss-webfonts
+ * @requires {mixin} guss-webfonts-single-declaration
+ * @requires {mixin} guss-webfonts
+ *
+ * @group webfonts
+ */
+/**
  * Data font stack
  *
  * @group typography

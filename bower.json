@@ -1,24 +1,20 @@
 {
   "name": "pasteup-buttons",
-  "version": "0.0.1",
   "description": "pasteup-buttons",
   "main": "_buttons.scss",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git@github.com:guardian/pasteup-buttons.git"
+    "url": "http://github.com/guardian/pasteup-buttons.git"
   },
   "bugs": {
     "url": "https://github.com/guardian/pasteup-buttons/issues"
   },
   "homepage": "https://github.com/guardian/pasteup-buttons",
   "dependencies": {
-      "pasteup-palette": "git@github.com:guardian/pasteup-palette.git",
-      "guss-typography": "git@github.com:guardian/guss-typography.git",
-      "guss-webfonts": "git@github.com:guardian/guss-webfonts.git"
-  },
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-sass": "^0.8.1",
-    "grunt-gh-pages": "^0.9.1"
+    "pasteup-palette": "git://github.com/guardian/pasteup-palette.git",
+    "guss-typography": "git://github.com/guardian/guss-typography.git",
+    "guss-webfonts": "git://github.com/guardian/guss-webfonts.git",
+    "guss-colours": "git://github.com/guardian/guss-colours.git"
   }
 }

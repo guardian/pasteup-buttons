@@ -6,20 +6,20 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         hologram: {
-            all: {
+            buttons: {
                 options: {
                     config: 'hologram-config.yml'
                 }
             }
         },
         sass: {
-            demo: {
+            buttons: {
                 options: {
                     style: 'expanded',
                     bundleExec: true
                 },
                 files: {
-                    'demo/demo.css': 'demo/demo.scss'
+                    'build/buttons.css': 'src/buttons.scss'
                 }
             }
         },
@@ -34,5 +34,5 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('docs', ['sass:demo', 'gh-pages:demo']);
+    grunt.registerTask('docs', ['sass:buttons', 'hologram:buttons']);
 };

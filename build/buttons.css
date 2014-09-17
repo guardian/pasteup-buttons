@@ -1,0 +1,1233 @@
+@charset "UTF-8";
+/*doc
+---
+title: Buttons
+name: buttons
+category: Common
+---
+```html_example
+<div>
+    <a href="#" class="button button--primary">Link to somewhere</a>
+    <a href="#" class="button button--secondary">Link to somewhere</a>
+    <a href="#" class="button button--tertiary">Link to somewhere</a>
+</div>
+<br/>
+<div>
+    <a href="#" class="button button--primary button--xlarge">Link to somewhere</a>
+    <a href="#" class="button button--primary button--large">Link to somewhere</a>
+    <a href="#" class="button button--primary button--medium">Link to somewhere</a>
+    <a href="#" class="button button--primary button--small">Link to somewhere</a>
+    <a href="#" class="button button--primary button--xsmall">Link to somewhere</a>
+</div>
+<br/>
+<div>
+    <a href="#" class="button button--primary button--xlarge">Link to somewhere<i class="i i-arrow-white-right i-right"></i></a>
+    <a href="#" class="button button--primary button--large">Link to somewhere<i class="i i-arrow-white-right i-right"></i></a>
+    <a href="#" class="button button--primary button--medium">Link to somewhere<i class="i i-arrow-white-right i-right"></i></a>
+    <a href="#" class="button button--primary button--small">Link to somewhere<i class="i i-arrow-white-right i-right"></i></a>
+    <a href="#" class="button button--primary button--xsmall">Link to somewhere<i class="i i-arrow-white-right i-right"></i></a>
+</div>
+<br/>
+<div>
+    <a href="#" class="button button--primary">Link to somewhere<i class="i i-arrow-white-right i-right"></i></a>
+    <a href="#" class="button button--secondary">Link to somewhere<i class="i i-arrow-white-right i-right"></i></a>
+    <a href="#" class="button button--tertiary">Link to somewhere<i class="i i-arrow-grey-right i-right"></i></a>
+</div>
+<br/>
+<div>
+    <a href="#" class="button button--primary"><i class="i i-arrow-white-right i-left"></i>Link to somewhere</a>
+    <a href="#" class="button button--secondary"><i class="i i-arrow-white-right i-left"></i>Link to somewhere</a>
+    <a href="#" class="button button--tertiary"><i class="i i-arrow-grey-right i-left"></i>Link to somewhere</a>
+</div>
+```
+
+```html_example
+<div>
+    <a href="#" class="button button--primary button--xlarge">
+        <i class="i i-arrow-white-right"></i>
+        <span class="u-h">Link to somewhere</span>
+    </a>
+    <a href="#" class="button button--primary button--large">
+        <i class="i i-arrow-white-right"></i>
+        <span class="u-h">Link to somewhere</span>
+    </a>
+    <a href="#" class="button button--primary button--medium">
+        <i class="i i-arrow-white-right"></i>
+        <span class="u-h">Link to somewhere</span>
+    </a>
+    <a href="#" class="button button--primary button--small">
+        <i class="i i-arrow-white-right"></i>
+        <span class="u-h">Link to somewhere</span>
+    </a>
+    <a href="#" class="button button--primary button--xsmall">
+        <i class="i i-arrow-white-right"></i>
+        <span class="u-h">Link to somewhere</span>
+    </a>
+</div>
+<br/>
+<div>
+    <a href="#" class="button button--secondary button--xlarge">
+        <i class="i i-arrow-white-right"></i>
+        <span class="u-h">Link to somewhere</span>
+    </a>
+    <a href="#" class="button button--secondary button--large">
+        <i class="i i-arrow-white-right"></i>
+        <span class="u-h">Link to somewhere</span>
+    </a>
+    <a href="#" class="button button--secondary button--medium">
+        <i class="i i-arrow-white-right"></i>
+        <span class="u-h">Link to somewhere</span>
+    </a>
+    <a href="#" class="button button--secondary button--small">
+        <i class="i i-arrow-white-right"></i>
+        <span class="u-h">Link to somewhere</span>
+    </a>
+    <a href="#" class="button button--secondary button--xsmall">
+        <i class="i i-arrow-white-right"></i>
+        <span class="u-h">Link to somewhere</span>
+    </a>
+</div>
+<br/>
+<div>
+    <a href="#" class="button button--tertiary button--xlarge">
+        <i class="i i-arrow-grey-right"></i>
+        <span class="u-h">Link to somewhere</span>
+    </a>
+    <a href="#" class="button button--tertiary button--large">
+        <i class="i i-arrow-grey-right"></i>
+        <span class="u-h">Link to somewhere</span>
+    </a>
+    <a href="#" class="button button--tertiary button--medium">
+        <i class="i i-arrow-grey-right"></i>
+        <span class="u-h">Link to somewhere</span>
+    </a>
+    <a href="#" class="button button--tertiary button--small">
+        <i class="i i-arrow-grey-right"></i>
+        <span class="u-h">Link to somewhere</span>
+    </a>
+    <a href="#" class="button button--tertiary button--xsmall">
+        <i class="i i-arrow-grey-right"></i>
+        <span class="u-h">Link to somewhere</span>
+    </a>
+</div>
+```
+
+```html_example
+<div>
+    <button type="button" class="button button--primary">Button to somewhere</button>
+    <button type="button" class="button button--secondary">Button to somewhere</button>
+    <button type="button" class="button button--tertiary">Button to somewhere</button>
+</div>
+<br/>
+<div>
+    <button type="button" class="button button--primary button--xlarge">Button to somewhere</button>
+    <button type="button" class="button button--primary button--large">Button to somewhere</button>
+    <button type="button" class="button button--primary button--medium">Button to somewhere</button>
+    <button type="button" class="button button--primary button--small">Button to somewhere</button>
+    <button type="button" class="button button--primary button--xsmall">Button to somewhere</button>
+</div>
+<br/>
+<div>
+    <button type="button" class="button button--primary button--xlarge">Button to somewhere<i class="i i-arrow-white-right i-right"></i></button>
+    <button type="button" class="button button--primary button--large">Button to somewhere<i class="i i-arrow-white-right i-right"></i></button>
+    <button type="button" class="button button--primary button--medium">Button to somewhere<i class="i i-arrow-white-right i-right"></i></button>
+    <button type="button" class="button button--primary button--small">Button to somewhere<i class="i i-arrow-white-right i-right"></i></button>
+    <button type="button" class="button button--primary button--xsmall">Button to somewhere<i class="i i-arrow-white-right i-right"></i></button>
+</div>
+<br/>
+<div>
+    <button type="button" class="button button--primary">Button to somewhere<i class="i i-arrow-white-right i-right"></i></button>
+    <button type="button" class="button button--secondary">Button to somewhere<i class="i i-arrow-white-right i-right"></i></button>
+    <button type="button" class="button button--tertiary">Button to somewhere<i class="i i-arrow-grey-right i-right"></i></button>
+</div>
+```
+*/
+/**
+ * An example of a colour palette to be used with guss-colours
+ *
+ * If you're looking for the guardian colour palette: https://github.com/guardian/pasteup-palette
+ * 
+ * @type Map
+ *
+ * @group colours
+ */
+/**
+ * Get a colour from a given colour palette.
+ * 
+ * @param {String} $name                    - colour to get
+ * @param {Map}    $palette ($guss-colours) - palette
+ *
+ * @requires {variable} guss-colours
+ *
+ * @return {Color | Null}
+ *
+ * @group colours
+ */
+/**
+ * Generate helper classes for a given colour palette  
+ * Outputs rules such as: `.c-red { color: red; }`.
+ *
+ * @param {Map}    $palette  ($guss-colours) - palette
+ * @param {String} $prefix   ("c-")          - prefix
+ * @param {String} $property ("color")       - property
+ *
+ * @requires {variable} guss-colours
+ *
+ * @group colours
+ */
+/**
+ * Default colour palette
+ * 
+ * @type Map
+ *
+ * @group colours
+ */
+/**
+ * Charset
+ *
+ * - ascii: 256 characters only, very small
+ * - latin1: latin 1 character set
+ * - original: full character set
+ *
+ * @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Hinting
+ *
+ * - on: larger file, better rendering in Windows
+ * - off: smaller files, render well on HiDPI displays
+ *
+ *  @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Kerning
+ *
+ * - on: larger file, better rendering
+ * - off: smaller files
+ *
+ *  @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Base URL
+ * URL can be an absolute HTTP (`//pasteup.guim.co.uk/fonts/`) or relative (`../`)
+ *
+ * @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Complete path
+ *
+ * @requires {variable} guss-webfonts-charset
+ * @requires {variable} guss-webfonts-hinting
+ * @requires {variable} guss-webfonts-kerning
+ *
+ * @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Human-readable Font-weights
+ *
+ * @type Map
+ *
+ * @group webfonts
+ */
+/* Extra fonts
+   ========================================================================== */
+/**
+ * Extra fonts directory
+ *
+ * @type String
+ *
+ * @group webfonts
+ */
+/**
+ * Extra fonts list
+ *
+ * @type List
+ *
+ * @group webfonts
+ */
+/* Font registry
+   ========================================================================== */
+/**
+ * Font registry
+ *
+ * @type Map
+ *
+ * @group webfonts
+ */
+/**
+ * Machine-readable CSS font-weight.
+ *
+ * @param {String} $keyword - Human-readable keyword in $guss-font-weights
+ *
+ * @requires {variable} guss-font-weights
+ *
+ * @example scss
+ * font-weight: guss-font-weight(light);
+ *
+ * @return {Number} - CSS font-weight
+ *
+ * @group webfonts
+ */
+/**
+ * Is this font stored in `$guss-extras-directory`?
+ *
+ * @param {String} $font-family - Font to look for
+ *
+ * @requires {variable} guss-webfonts-extras
+ *
+ * @return {Bool}
+ *
+ * @group webfonts
+ */
+/**
+ * Replace `$search` by `$replace` in `$string`.
+ *
+ * @author Hugo Giraudel
+ *
+ * @param {String} $string - string to update
+ * @param {String} $search - value to replace
+ * @param {String} $replace ('') - new value
+ *
+ * @return {String}
+ *
+ * @group webfonts
+ */
+/**
+ * Remove white space in $string
+ *
+ * @requires {function} str-replace
+ *
+ * @param {String} $string - string to update
+ *
+ * @return {String}
+ *
+ * @group webfonts
+ */
+/**
+ * Capitalise first letter of $string
+ *
+ * @param {String} $string - string to update
+ *
+ * @return {String}
+ *
+ * @group webfonts
+ */
+/**
+ * Compose webfont filename
+ *
+ * @param {String} $font-family - font family
+ * @param {String} $weight - weight, member of $guss-font-weights
+ * @param {String} $style - normal | italic
+ *
+ * @requires {function} str-capitalise
+ * @requires {function} str-remove-white-space
+ *
+ * @example scss
+ * src: url('compose-webfont-filename("Guardian Text Sans Web", bold, italic).woff');
+ * -> src: url("GuardianTextSansWeb-BoldItalic.eot");
+ *
+ * @return {String}
+ *
+ * @group webfonts
+ */
+/**
+ * Compose webfont path
+ * "My Font" is in the MyFont/ directory
+ * "Extra" fonts are stored in `$guss-extras-directory`.
+ *
+ * @param {String} $font-family - font name
+ *
+ * @requires {variable} guss-extras-directory
+ * @requires {variable} guss-webfonts-path
+ * @requires {function} str-remove-white-space
+ *
+ * @return {String} - Path to the font
+ *
+ * @group webfonts
+ */
+/**
+ * Look for `$needle` in `$haystack`.
+ *
+ * @param {List}   $haystack - List to search in
+ * @param {String} $needle - The string to look for
+ *
+ * @return {Bool}
+ *
+ * @group webfonts
+ */
+/**
+ * Output a @font-face declaration at root level.
+ *
+ * @param {String} $family - List to search in
+ * @param {String} $file - The filename
+ * @param {String} $base-path - Directory where the font is stored
+ * @param {Number} $weight (400) - CSS font-weight
+ * @param {String} $style (normal) - CSS font-style
+ * @param {String} $url ($guss-webfonts-base-url) - URL
+ *
+ * @requires {variable} guss-webfonts-base-url
+ *
+ * @group webfonts
+ */
+/**
+ * Output the @font-face declaration for a Guss webfont.
+ *
+ * @param {Number} $font-family - ID of the font in $guss-webfonts
+ * @param {Map} $properties - weight (member of `$guss-font-weights`), style (`normal` | `italic`)
+ * @param {Map} $overrides - weight (member of `$guss-font-weights`), style (`normal` | `italic`)
+ *
+ * @requires {variable} guss-webfonts
+ * @requires {function} compose-webfont-filename
+ * @requires {function} compose-webfont-path
+ * @requires {function} guss-font-weight
+ * @requires {mixin} guss-at-font-face
+ *
+ * @group webfonts
+ */
+/**
+ * Output the @font-face declaration for Guss webfonts.
+ *
+ * @param {String|List|Map} $fonts ($guss-webfonts) - Fonts to output
+ * @param {Map} $registry ($guss-webfonts) - Font registry
+ *
+ * @requires {variable} guss-webfonts
+ * @requires {mixin} guss-webfonts-single-declaration
+ * @requires {mixin} guss-webfonts
+ *
+ * @group webfonts
+ */
+/**
+ * Data font stack
+ *
+ * @group typography
+ */
+/**
+ * Serif font stack
+ *
+ * @group typography
+ */
+/**
+ * Headline font stack
+ *
+ * @group typography
+ */
+/**
+ * Sans serif text font stack
+ *
+ * @group typography
+ */
+/**
+ * Sans serif headline font stack
+ *
+ * @group typography
+ */
+/**
+ * Default font scale settings
+ * See font-scale.html and font-scale.png for visual representations
+ *
+ * @group typography
+ */
+/**
+ * Grab all levels of a font the font-scale
+ *
+ * @param {String} $name - Name of the font-scale matrix (eg: headline)
+ * @param {Map} $font-scale ($font-scale)
+ *
+ * @example
+ *  font-size: get-scale(header);
+ *
+ * @requires {variable} $font-scale
+ *
+ * @return {Map}
+ *
+ * @group typography
+ */
+/**
+ * Grab info for a particular level of a font-scale
+ *
+ * @param {String} $name - Name of the font-scale in the matrix (eg: headline)
+ * @param {Number} $level - Level in the matrix
+ * @param {Map} $font-scale ($font-scale)
+ *
+ * @example
+ *  font-size: get-scale-level(header, 1);
+ *
+ * @requires {variable} $font-scale
+ * @requires {function} get-scale
+ *
+ * @return {Map}
+ *
+ * @group typography
+ */
+/**
+ * Get a font-size for a level in the font-scale matrix
+ *
+ * @param {String} $name - Name of the font-scale in the matrix (eg: headline)
+ * @param {Number} $level - Level in the matrix
+ * @param {Map} $font-scale - Configuration
+ *
+ * @example
+ *  font-size: get-font-size(header, 3);
+ *
+ * @requires {variable} $font-scale
+ * @requires {function} convert-to-px
+ * @requires {function} get-scale-level
+ *
+ * @return {Number}
+ *
+ * @group typography
+ */
+/**
+ * Get a line-height for a level in the font-scale matrix
+ *
+ * @param {String} $name - Name of the font-scale in the matrix (eg: headline)
+ * @param {Number} $level - Level in the matrix
+ * @param {Map} $font-scale - Configuration
+ *
+ * @example
+ *  font-size: get-line-height(header, 3);
+ *
+ * @requires {variable} $font-scale
+ * @requires {function} convert-to-px
+ * @requires {function} get-scale-level
+ *
+ * @return {Number}
+ *
+ * @group typography
+ */
+/**
+ * Turn any value into pixels
+ *
+ * @param {Number} $value
+ *
+ * @example
+ *  font-size: convert-to-px(14); // 14px
+ *
+ * @return {Number}
+ *
+ * @group typography
+ */
+/**
+ * Default typography settings, to be included as soon as possible in the HTML
+ * 1. Make type rendering look crisper
+ * 2. Set baseline font size to 10px
+ * 3. Fixes an IE11 bug where rouding with % would create scaling issues  
+ *    See http://bit.ly/1g4X0bX — thanks @7studio and @dawitti
+ * 4. Set default text size back to 16px (at default zoom level)
+ * 5. Set relative line spacing to 1.5 (16px * 1.5 = 24px)
+ *
+ * @param {String} $font-family ($f-serif-text) - Default global font
+ *
+ * @requires {variable} $f-serif-text
+ *
+ * @group typography
+ */
+/**
+ * Font-size and line-height shorthand
+ *
+ * @param {Number} $size
+ * @param {Number} $line-height ($size)
+ *
+ * @example
+ *  @include font-size(18, 24);
+ *
+ * @requires {function} convert-to-px
+ *
+ * @group typography
+ */
+/**
+ * Font styling shorthand  
+ * Note: prefer the usage of the font-scale mixins to stick to the font scale
+ *
+ * @param {String} $family
+ * @param {String} $weight
+ * @param {Number} $size
+ * @param {Number} $line-height ($size)
+ *
+ * @example
+ *  @include font(arial, bold, 18, 24);
+ *
+ * @requires {mixin} font-size
+ *
+ * @group typography
+ */
+/**
+ * Header family and weight properties.
+ *
+ * @requires {variable} $f-serif-headline
+ *
+ * @group typography
+ */
+/**
+ * Header typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family, weight)
+ *  @include fs-header(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-header(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-header
+ *
+ * @group typography
+ */
+/**
+ * Healdine family and weight properties.
+ *
+ * @requires {variable} $f-serif-headline
+ *
+ * @group typography
+ */
+/**
+ * Headline typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family, weight)
+ *  @include fs-headline(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-headline(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-headline
+ *
+ * @group typography
+ */
+/**
+ * Body Heading family and weight properties.
+ *
+ * @requires {variable} $f-serif-text
+ *
+ * @group typography
+ */
+/**
+ * Body Heading typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family, weight)
+ *  @include fs-bodyHeading(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-bodyHeading(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-bodyHeading
+ *
+ * @group typography
+ */
+/**
+ * Body Copy family property.
+ *
+ * @requires {variable} $f-serif-text
+ *
+ * @group typography
+ */
+/**
+ * Body Copy typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family)
+ *  @include fs-bodyCopy(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-bodyCopy(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-bodyCopy
+ *
+ * @group typography
+ */
+/**
+ * Data family property.
+ *
+ * @requires {variable} $f-data
+ *
+ * @group typography
+ */
+/**
+ * Data typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family)
+ *  @include fs-data(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-data(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-data
+ *
+ * @group typography
+ */
+/**
+ * Text Sans family property.
+ *
+ * @requires {variable} $f-sans-serif-text
+ *
+ * @group typography
+ */
+/**
+ * Text Sans typography settings.
+ *
+ * @param {Number} $level
+ * @param {Boolean} $size-only
+ *
+ * @example
+ *  // Output all properties (font-size, line-height, family)
+ *  @include fs-textSans(3);
+ *  
+ *  // Output font-size and line-height only
+ *  @include fs-textSans(3, $size-only: true);
+ *
+ * @requires {function} get-font-size
+ * @requires {function} get-line-height
+ * @requires {mixin} font-size
+ * @requires {mixin} f-textSans
+ *
+ * @group typography
+ */
+/**
+ * Headline Sans family property.  
+ * Is not currently integrated into our font scale matrix,
+ * hence no `fs-` mixin; currently we're just using it as a
+ * replacement font in a few places.
+ *
+ * @requires {variable} $f-sans-serif-headline
+ *
+ * @group typography
+ */
+@font-face {
+  font-family: "Guardian Agate Sans 1 Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Regular.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Regular.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Regular.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Regular.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Regular.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Regular.svg#GuardianAgateSans1Web-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Agate Sans 1 Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-RegularItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-RegularItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-RegularItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-RegularItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-RegularItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-RegularItalic.svg#GuardianAgateSans1Web-RegularItalic") format("svg");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Agate Sans 1 Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Bold.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Bold.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Bold.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Bold.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Bold.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-Bold.svg#GuardianAgateSans1Web-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Agate Sans 1 Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-BoldItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-BoldItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-BoldItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-BoldItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-BoldItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianAgateSans1Web/GuardianAgateSans1Web-BoldItalic.svg#GuardianAgateSans1Web-BoldItalic") format("svg");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Light.svg#GuardianEgyptianWeb-Light") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Regular.svg#GuardianEgyptianWeb-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-RegularItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-RegularItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-RegularItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-RegularItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-RegularItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-RegularItalic.svg#GuardianEgyptianWeb-RegularItalic") format("svg");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Semibold.svg#GuardianEgyptianWeb-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-SemiboldItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-SemiboldItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-SemiboldItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-SemiboldItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-SemiboldItalic.svg#GuardianEgyptianWeb-SemiboldItalic") format("svg");
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Medium.svg#GuardianEgyptianWeb-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Bold.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Bold.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Bold.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Bold.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Bold.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-Bold.svg#GuardianEgyptianWeb-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-BoldItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-BoldItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-BoldItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-BoldItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-BoldItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianEgyptianWeb/GuardianEgyptianWeb-BoldItalic.svg#GuardianEgyptianWeb-BoldItalic") format("svg");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Light.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Light.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Light.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Light.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Light.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Light.svg#GuardianSansWeb-Light") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Regular.svg#GuardianSansWeb-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Semibold.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Semibold.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Semibold.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Semibold.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Semibold.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianSansWeb/GuardianSansWeb-Semibold.svg#GuardianSansWeb-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.svg#GuardianTextEgyptianWeb-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-RegularItalic.svg#GuardianTextEgyptianWeb-RegularItalic") format("svg");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Medium.svg#GuardianTextEgyptianWeb-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-MediumItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-MediumItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-MediumItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-MediumItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-MediumItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-MediumItalic.svg#GuardianTextEgyptianWeb-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Bold.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Bold.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Bold.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Bold.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Bold.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Bold.svg#GuardianTextEgyptianWeb-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BoldItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BoldItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BoldItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BoldItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BoldItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BoldItalic.svg#GuardianTextEgyptianWeb-BoldItalic") format("svg");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Black.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Black.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Black.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Black.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Black.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Black.svg#GuardianTextEgyptianWeb-Black") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Text Egyptian Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BlackItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BlackItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BlackItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BlackItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BlackItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-BlackItalic.svg#GuardianTextEgyptianWeb-BlackItalic") format("svg");
+  font-weight: 800;
+  font-style: italic;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Regular.svg#GuardianTextSansWeb-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-RegularItalic.svg#GuardianTextSansWeb-RegularItalic") format("svg");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Medium.svg#GuardianTextSansWeb-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-MediumItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-MediumItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-MediumItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-MediumItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-MediumItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-MediumItalic.svg#GuardianTextSansWeb-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Bold.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Bold.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Bold.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Bold.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Bold.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Bold.svg#GuardianTextSansWeb-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BoldItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BoldItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BoldItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BoldItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BoldItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BoldItalic.svg#GuardianTextSansWeb-BoldItalic") format("svg");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Black.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Black.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Black.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Black.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Black.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-Black.svg#GuardianTextSansWeb-Black") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Text Sans Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BlackItalic.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BlackItalic.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BlackItalic.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BlackItalic.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BlackItalic.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianTextSansWeb/GuardianTextSansWeb-BlackItalic.svg#GuardianTextSansWeb-BlackItalic") format("svg");
+  font-weight: 800;
+  font-style: italic;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Compact Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianCompactWeb-Black.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianCompactWeb-Black.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianCompactWeb-Black.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianCompactWeb-Black.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianCompactWeb-Black.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianCompactWeb-Black.svg#GuardianCompactWeb-Black") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Titlepiece Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianTitlepieceWeb-Regular.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianTitlepieceWeb-Regular.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianTitlepieceWeb-Regular.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianTitlepieceWeb-Regular.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianTitlepieceWeb-Regular.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianTitlepieceWeb-Regular.svg#GuardianTitlepieceWeb-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Guardian Weekend Cond Web";
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianWeekendCondWeb-Black.eot");
+  src: url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianWeekendCondWeb-Black.eot?#iefix") format("embedded-opentype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianWeekendCondWeb-Black.woff2") format("woff2"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianWeekendCondWeb-Black.woff") format("woff"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianWeekendCondWeb-Black.ttf") format("truetype"), url("//pasteup.guim.co.uk/fonts/webfonts/hinting-on_kerning-on/original/GuardianExtrasWeb/GuardianWeekendCondWeb-Black.svg#GuardianWeekendCondWeb-Black") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+}
+.button {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 30px;
+  padding: 0 10px;
+  margin-right: 10px;
+  line-height: 32px;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-border-radius: 1000px;
+  border-radius: 1000px;
+  color: white;
+  background-color: #4bc6df;
+  border-color: #4bc6df;
+}
+.button .i {
+  width: 30px;
+  height: 30px;
+  margin: -1px -10px 0;
+}
+.button .i-left {
+  margin-left: -10px;
+  margin-right: 0;
+  float: left;
+}
+.button .i-right {
+  margin-right: -10px;
+  margin-left: 0;
+  float: right;
+}
+.button:hover, .button:focus, .button:active {
+  background-color: #005689;
+  border-color: #005689;
+}
+.button:hover, .button:focus, .button:active {
+  text-decoration: none;
+}
+
+.button--primary {
+  color: white;
+  background-color: #005689;
+  border-color: #005689;
+}
+.button--primary:hover, .button--primary:focus, .button--primary:active {
+  background-color: #003656;
+  border-color: #003656;
+}
+
+.button--secondary {
+  color: white;
+  background-color: #767676;
+  border-color: #767676;
+}
+.button--secondary:hover, .button--secondary:focus, .button--secondary:active {
+  background-color: #333333;
+  border-color: #333333;
+}
+
+.button--tertiary {
+  color: #767676;
+  background-color: transparent;
+  border-color: transparent;
+  border-color: #bdbdbd;
+}
+.button--tertiary:hover, .button--tertiary:focus, .button--tertiary:active {
+  background-color: transparent;
+  border-color: #bdbdbd;
+}
+.button--tertiary:hover, .button--tertiary:focus, .button--tertiary:active {
+  color: #333333;
+  border-color: #333333;
+}
+
+.button--xlarge {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 44px;
+  padding: 0 14.66667px;
+  margin-right: 14.66667px;
+  line-height: 46px;
+  border-width: 1px;
+  border-style: solid;
+}
+.button--xlarge .i {
+  width: 44px;
+  height: 44px;
+  margin: -1px -14.66667px 0;
+}
+.button--xlarge .i-left {
+  margin-left: -14.66667px;
+  margin-right: 0;
+  float: left;
+}
+.button--xlarge .i-right {
+  margin-right: -14.66667px;
+  margin-left: 0;
+  float: right;
+}
+
+.button--large {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 36px;
+  padding: 0 12px;
+  margin-right: 12px;
+  line-height: 38px;
+  border-width: 1px;
+  border-style: solid;
+}
+.button--large .i {
+  width: 36px;
+  height: 36px;
+  margin: -1px -12px 0;
+}
+.button--large .i-left {
+  margin-left: -12px;
+  margin-right: 0;
+  float: left;
+}
+.button--large .i-right {
+  margin-right: -12px;
+  margin-left: 0;
+  float: right;
+}
+
+.button--medium {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 30px;
+  padding: 0 10px;
+  margin-right: 10px;
+  line-height: 32px;
+  border-width: 1px;
+  border-style: solid;
+}
+.button--medium .i {
+  width: 30px;
+  height: 30px;
+  margin: -1px -10px 0;
+}
+.button--medium .i-left {
+  margin-left: -10px;
+  margin-right: 0;
+  float: left;
+}
+.button--medium .i-right {
+  margin-right: -10px;
+  margin-left: 0;
+  float: right;
+}
+
+.button--small {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 24px;
+  padding: 0 8px;
+  margin-right: 8px;
+  line-height: 26px;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 23px;
+  font-weight: bold;
+}
+.button--small .i {
+  width: 24px;
+  height: 24px;
+  margin: -1px -8px 0;
+}
+.button--small .i-left {
+  margin-left: -8px;
+  margin-right: 0;
+  float: left;
+}
+.button--small .i-right {
+  margin-right: -8px;
+  margin-left: 0;
+  float: right;
+}
+
+.button--xsmall {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 18px;
+  padding: 0 6px;
+  margin-right: 6px;
+  line-height: 20px;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 17px;
+  font-weight: bold;
+}
+.button--xsmall .i {
+  width: 18px;
+  height: 18px;
+  margin: -1px -6px 0;
+}
+.button--xsmall .i-left {
+  margin-left: -6px;
+  margin-right: 0;
+  float: left;
+}
+.button--xsmall .i-right {
+  margin-right: -6px;
+  margin-left: 0;
+  float: right;
+}

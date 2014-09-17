@@ -749,7 +749,7 @@ category: Common
   border-style: solid;
   -webkit-border-radius: 1000px;
   border-radius: 1000px;
-  color: #ffffff;
+  color: white;
   background-color: #4bc6df;
   border-color: #4bc6df;
 }
@@ -777,7 +777,7 @@ category: Common
 }
 
 .button--primary {
-  color: #ffffff;
+  color: white;
   background-color: #005689;
   border-color: #005689;
 }
@@ -787,7 +787,7 @@ category: Common
 }
 
 .button--secondary {
-  color: #ffffff;
+  color: white;
   background-color: #767676;
   border-color: #767676;
 }
@@ -968,5 +968,3 @@ body {
   font-size: 1.6em;
   line-height: 1.5;
 }
-
-/*# sourceMappingURL=demo.css.map */

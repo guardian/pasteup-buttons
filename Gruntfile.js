@@ -4,12 +4,20 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-gh-pages');
     grunt.loadNpmTasks('grunt-hologram');
+    grunt.loadNpmTasks('grunt-mkdir');
     grunt.loadNpmTasks('grunt-scss-lint');
 
     grunt.initConfig({
         clean: {
             build: ['./build'],
             docs: ['./docs'],
+        },
+        mkdir: {
+            docs: {
+                options: {
+                    create: ['./docs']
+                }
+            }
         },
         scsslint: {
             buttons: [

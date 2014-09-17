@@ -1,20 +1,50 @@
-pasteup-buttons
+Pasteup Buttons
 ===============
 
 Part of the [Pasteup](https://github.com/guardian/pasteup) collection.
 
-[View the demo](http://guardian.github.io/pasteup-buttons)
+[View the docs](http://guardian.github.io/pasteup-buttons/)
 
 ## Installation
 
+You will need
+
+ * [Node.js](http://nodejs.org/)
+ * [Bower](http://bower.io/)
 ```
-bower install pasteup-buttons --save
+$ npm install -g bower
+```
+
+Then install this component with
+
+```
+$ bower install pasteup-buttons --save
 ```
 
 ## Development
 
-### Requirements
+On top of the above requirements, you will also need
 
- * Node
- * Ruby
- * Bower
+ * [Ruby](https://www.ruby-lang.org/en/)
+ * [Bundler](http://bundler.io/)
+```
+$ gem install bundler
+```
+ * [Grunt CLI](http://gruntjs.com/getting-started#installing-the-cli)
+```
+$ npm install -g grunt-cli
+```
+
+Then, in root, install the dependecies
+
+```
+$ bundle install
+$ npm install
+$ bower install
+```
+
+To build the component
+
+```
+$ grunt build
+```

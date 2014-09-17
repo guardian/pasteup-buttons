@@ -1,7 +1,7 @@
 {
   "name": "pasteup-buttons",
   "description": "pasteup-buttons",
-  "main": "_buttons.scss",
+  "main": "build/buttons.min.scss",
   "version": "0.0.1",
   "repository": {
     "type": "git",

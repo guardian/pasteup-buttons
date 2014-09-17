@@ -4,20 +4,16 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-gh-pages');
     grunt.loadNpmTasks('grunt-hologram');
-    grunt.loadNpmTasks('grunt-mkdir');
     grunt.loadNpmTasks('grunt-scss-lint');
 
     grunt.initConfig({
         clean: {
-            build: ['./build'],
-            docs: ['./docs'],
-        },
-        mkdir: {
-            docs: {
-                options: {
-                    create: ['./docs']
-                }
-            }
+            build: [
+                'build'
+            ],
+            docs: [
+                'docs'
+            ],
         },
         scsslint: {
             buttons: [
@@ -29,21 +25,28 @@ module.exports = function(grunt) {
                 reporterOutput: null
             }
         },
+        sass: {
+            buttons: {
+                options: {
+                    style: 'compressed',
+                    bundleExec: true
+                },
+                files:  [{
+                    expand: true,
+                    cwd: 'src',
+                    src: [
+                        '**/*.scss',
+                        '!**/_*.scss'
+                    ],
+                    dest: 'build',
+                    ext: '.min.css'
+                }]
+            }
+        },
         hologram: {
             buttons: {
                 options: {
                     config: 'hologram-config.yml'
-                }
-            }
-        },
-        sass: {
-            buttons: {
-                options: {
-                    style: 'expanded',
-                    bundleExec: true
-                },
-                files: {
-                    'build/buttons.css': 'src/buttons.scss'
                 }
             }
         },

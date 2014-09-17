@@ -24,15 +24,21 @@ module.exports = function(grunt) {
             }
         },
         'gh-pages': {
-            demo: {
+            docs: {
                 options: {
-                    base: 'demo',
-                    message: 'Auto-updating demo'
+                    base: 'docs',
+                    message: 'Releasing docs to http://guardian.github.io/pasteup-buttons/'
                 },
-                src: ['*.{html,css}']
+                src: [
+                    '*.html',
+                    'build/**/*',
+                    'theme-build/**/*'
+                ]
             }
         }
     });
 
-    grunt.registerTask('docs', ['sass:buttons', 'hologram:buttons']);
+    grunt.registerTask('build', ['sass:buttons']);
+    grunt.registerTask('docs', ['build', 'hologram:buttons']);
+    grunt.registerTask('release', ['docs', 'gh-pages:docs']);
 };

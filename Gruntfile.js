@@ -4,7 +4,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-gh-pages');
     grunt.loadNpmTasks('grunt-hologram');
+    grunt.loadNpmTasks('grunt-release');
     grunt.loadNpmTasks('grunt-scss-lint');
+
+    grunt.task.renameTask('release', 'git-release');
 
     grunt.initConfig({
         clean: {
@@ -62,11 +65,20 @@ module.exports = function(grunt) {
                     'theme-build/**/*'
                 ]
             }
+        },
+        'git-release': {
+            options: {
+                file: 'bower.json',
+                npm: false
+            }
         }
     });
 
     grunt.registerTask('validate', ['scsslint:buttons']);
     grunt.registerTask('build', ['validate', 'clean:build', 'sass:buttons']);
     grunt.registerTask('docs', ['build', 'clean:docs', 'hologram:buttons']);
-    grunt.registerTask('release', ['docs', 'gh-pages:docs']);
+    grunt.registerTask('release', function (type) {
+        var releaseTarget = type ? ':' + type : '';
+        grunt.task.run(['build', 'git-release' + releaseTarget, 'clean:docs', 'hologram:buttons', 'gh-pages:docs']);
+    });
 };

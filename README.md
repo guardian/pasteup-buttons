@@ -48,3 +48,15 @@ To build the component
 ```
 $ grunt build
 ```
+
+To release the component
+
+```
+$ grunt release
+```
+
+By default a patch release. Also `major` and `minor` targets available, e.g.
+
+```
+$ grunt release:minor
+```

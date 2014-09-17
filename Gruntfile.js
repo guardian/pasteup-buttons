@@ -1,10 +1,26 @@
 module.exports = function(grunt) {
 
-    grunt.loadNpmTasks('grunt-hologram');
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-gh-pages');
+    grunt.loadNpmTasks('grunt-hologram');
+    grunt.loadNpmTasks('grunt-scss-lint');
 
     grunt.initConfig({
+        clean: {
+            build: ['./build'],
+            docs: ['./docs'],
+        },
+        scsslint: {
+            buttons: [
+                'src'
+            ],
+            options: {
+                bundleExec: true,
+                config: 'scss-lint.yml',
+                reporterOutput: null
+            }
+        },
         hologram: {
             buttons: {
                 options: {
@@ -38,7 +54,8 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('build', ['sass:buttons']);
-    grunt.registerTask('docs', ['build', 'hologram:buttons']);
+    grunt.registerTask('validate', ['scsslint:buttons']);
+    grunt.registerTask('build', ['validate', 'clean:build', 'sass:buttons']);
+    grunt.registerTask('docs', ['build', 'clean:docs', 'hologram:buttons']);
     grunt.registerTask('release', ['docs', 'gh-pages:docs']);
 };

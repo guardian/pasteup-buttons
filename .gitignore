@@ -1,8 +1,8 @@
-.sass-cache
 .grunt
+.sass-cache
 bower_components
-node_modules
 build
-docs/build
+docs
+node_modules
 
 .DS_Store

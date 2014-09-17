@@ -10,3 +10,11 @@ Part of the [Pasteup](https://github.com/guardian/pasteup) collection.
 ```
 bower install pasteup-buttons --save
 ```
+
+## Development
+
+### Requirements
+
+ * Node
+ * Ruby
+ * Bower

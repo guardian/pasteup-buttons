@@ -1,1 +1,0 @@
-module.exports=function(e){e.loadNpmTasks("grunt-contrib-sass");e.loadNpmTasks("grunt-gh-pages");e.initConfig({sass:{demo:{options:{style:"expanded"},files:{"demo/demo.css":"demo/demo.scss"}}},"gh-pages":{demo:{options:{base:"demo",message:"Auto-updating demo"},src:["*.{html,css}"]}}});e.registerTask("docs",["sass:demo","gh-pages:demo"])};

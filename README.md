@@ -27,7 +27,7 @@ $ bower install pasteup-buttons --save
 @import 'bower_components/pasteup-buttons/src/_buttons'
 ```
 
-Or use the [standalone build](build/button.min.css)
+Or use the [standalone build](build/buttons.min.css)
 
 ## Development
 

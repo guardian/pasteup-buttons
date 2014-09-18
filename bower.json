@@ -4,7 +4,7 @@
   "version": "0.3.2",
   "main": [
     "build/buttons.min.css",
-    "build/buttons-standalone.min.css"
+    "src/_buttons.scss"
   ],
   "homepage": "https://github.com/guardian/pasteup-buttons",
   "repository": {

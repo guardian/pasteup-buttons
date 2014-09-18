@@ -49,6 +49,12 @@ To build the component
 $ grunt build
 ```
 
+To build the docs (output to the `docs` dir)
+
+```
+$ grunt docs
+```
+
 To release the component
 
 ```

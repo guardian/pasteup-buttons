@@ -19,9 +19,10 @@ custom_markdown: ./bower_components/Cortana/CortanaMarkdownRenderer.rb
 dependencies:
  - ./build
 
-# List all css to include for the styleguide render examples (path from styleguide directory)
+# List all css to include for the styleguide render examples (path from
+# styleguide directory)
 css_include:
- - ./build/buttons-standalone.min.css
+ - ./build/buttons.min.css
 
 # String who is used to split the category name and create category wrapper
 name_scope: ' - '

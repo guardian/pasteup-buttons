@@ -38,7 +38,9 @@ category: Common
     <a href="#" class="button button--secondary"><i class="i i-arrow-white-right i-left"></i>Link to somewhere</a>
     <a href="#" class="button button--tertiary"><i class="i i-arrow-grey-right i-left"></i>Link to somewhere</a>
 </div>
-<br/>
+```
+
+```html_example
 <div>
     <a href="#" class="button button--primary button--xlarge">
         <i class="i i-arrow-white-right"></i>
@@ -107,7 +109,9 @@ category: Common
         <span class="u-h">Link to somewhere</span>
     </a>
 </div>
-<br/>
+```
+
+```html_example
 <div>
     <button type="button" class="button button--primary">Button to somewhere</button>
     <button type="button" class="button button--secondary">Button to somewhere</button>
@@ -137,6 +141,19 @@ category: Common
 </div>
 ```
 */
+$standalone: false !default;
+
+$gs-baseline: 12px;
+$guss-webfonts-base-url: '//pasteup.guim.co.uk/fonts/';
+
+@import 'bower_components/guss-colours/_colours';
+@import 'bower_components/pasteup-palette/_palette';
+@import 'bower_components/guss-webfonts/_webfonts';
+@import 'bower_components/guss-typography/_typography';
+
+@if ($standalone) {
+    @include guss-webfonts;
+}
 
 @mixin button-height($button-size) {
     -webkit-box-sizing: border-box;
@@ -148,7 +165,7 @@ category: Common
     line-height: $button-size + 2px;
     border-width: 1px;
     border-style: solid;
-    
+
     .i {
         width: $button-size;
         height: $button-size;
@@ -169,13 +186,13 @@ category: Common
     color: $text-colour;
     background-color: $fill-colour;
     border-color: $fill-colour;
-    
+
     &:hover,
     &:focus,
     &:active {
         background-color: $hover-colour;
         border-color: $hover-border;
-    }    
+    }
 }
 .button {
     display: inline-block;
@@ -206,7 +223,7 @@ category: Common
 .button--tertiary {
     @include button-colour(transparent, guss-colour(neutral-2, $pasteup-palette), transparent, guss-colour(neutral-3, $pasteup-palette));
     border-color: guss-colour(neutral-3, $pasteup-palette);
-    
+
     &:hover,
     &:focus,
     &:active {

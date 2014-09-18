@@ -1,7 +1,7 @@
-.sass-cache
-.grunt
-bower_components
-node_modules
-demo/demo.css
-
 .DS_Store
+.grunt
+.sass-cache
+
+bower_components
+docs
+node_modules

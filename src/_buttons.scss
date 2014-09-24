@@ -121,7 +121,7 @@ They come in different sizes:
     @include button-colour(
         guss-colour(guardian-brand, $pasteup-palette),
         #ffffff,
-        darken(guss-colour(tone-news-1, $pasteup-palette), 10%)
+        darken(guss-colour(news-main-1, $pasteup-palette), 10%)
     );
 }
 .button--secondary {

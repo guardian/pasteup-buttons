@@ -12,7 +12,7 @@
     "url": "http://github.com/guardian/pasteup-buttons.git"
   },
   "dependencies": {
-    "guss-colours": "~3.0.0",
+    "guss-colours": "~3.1.0",
     "guss-grid-system": "~1.2.1",
     "guss-typography": "~3.0.0",
     "guss-webfonts": "~2.1.1",

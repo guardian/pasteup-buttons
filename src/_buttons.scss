@@ -139,14 +139,6 @@ They come in different sizes:
         darken(guss-colour(neutral-3, $pasteup-palette), 10%),
         guss-colour(neutral-4, $pasteup-palette)
     );
-    border-color: guss-colour(neutral-3, $pasteup-palette);
-
-    &:hover,
-    &:focus,
-    &:active {
-        color: guss-colour(neutral-1, $pasteup-palette);
-        border-color: guss-colour(neutral-1, $pasteup-palette);
-    }
 }
 
 .button--tone-media {

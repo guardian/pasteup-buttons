@@ -106,9 +106,9 @@ They come in different sizes:
     -webkit-border-radius: 1000px;
     border-radius: 1000px;
     @include button-colour(
-        guss-colour(tone-news-2, $pasteup-palette),
+        guss-colour(news-main-2, $pasteup-palette),
         #ffffff,
-         guss-colour(tone-news-1, $pasteup-palette)
+        guss-colour(news-main-1, $pasteup-palette)
      );
 
     &:hover,
@@ -121,29 +121,25 @@ They come in different sizes:
     @include button-colour(
         guss-colour(guardian-brand, $pasteup-palette),
         #ffffff,
-        darken(guss-colour(news-main-1, $pasteup-palette), 10%)
+        darken(guss-colour(guardian-brand, $pasteup-palette), 10%)
     );
 }
 .button--secondary {
-    @include button-colour(guss-colour(neutral-2, $pasteup-palette), #ffffff, guss-colour(neutral-1, $pasteup-palette));
+    @include button-colour(
+            guss-colour(neutral-7, $pasteup-palette),
+            guss-colour(neutral-1, $pasteup-palette),
+            darken(guss-colour(neutral-7, $pasteup-palette), 10%)
+    );
 }
 .button--tertiary {
     @include button-colour(
-        transparent,
-        guss-colour(neutral-2, $pasteup-palette),
-        transparent,
-        guss-colour(neutral-3, $pasteup-palette)
+            #ffffff,
+            guss-colour(neutral-1, $pasteup-palette),
+            #ffffff,
+            darken(guss-colour(neutral-3, $pasteup-palette), 10%),
+            guss-colour(neutral-4, $pasteup-palette)
     );
-    border-color: guss-colour(neutral-3, $pasteup-palette);
-
-    &:hover,
-    &:focus,
-    &:active {
-        color: guss-colour(neutral-1, $pasteup-palette);
-        border-color: guss-colour(neutral-1, $pasteup-palette);
-    }
 }
-
 .button--tone-media {
     @include button-colour(
         guss-colour(multimedia-support-4, $pasteup-palette),
@@ -189,7 +185,7 @@ They come in different sizes:
         guss-colour(features-support-1, $pasteup-palette),
         #ffffff,
         darken(guss-colour(neutral-3, $pasteup-palette), 10%),
-        guss-colour(neutral-3, $pasteup-palette)
+        guss-colour(neutral-4, $pasteup-palette)
     );
 }
 .button--tone-comment {
@@ -205,20 +201,20 @@ They come in different sizes:
         guss-colour(comment-main-1, $pasteup-palette),
         #ffffff,
         darken(guss-colour(neutral-3, $pasteup-palette), 10%),
-        guss-colour(neutral-3, $pasteup-palette)
+        guss-colour(neutral-4, $pasteup-palette)
     );
 }
 .button--tone-live {
     @include button-colour(
         guss-colour(neutral-6, $pasteup-palette),
-        guss-colour(news-main-1, $pasteup-palette),
+        guss-colour(neutral-1, $pasteup-palette),
         darken(guss-colour(neutral-6, $pasteup-palette), 10%)
     );
 }
 .button--tone-live-variant {
     @include button-colour(
         guss-colour(neutral-8, $pasteup-palette),
-        guss-colour(news-main-1, $pasteup-palette),
+        guss-colour(neutral-1, $pasteup-palette),
         guss-colour(neutral-8, $pasteup-palette),
         darken(guss-colour(neutral-3, $pasteup-palette), 10%),
         guss-colour(neutral-3, $pasteup-palette)

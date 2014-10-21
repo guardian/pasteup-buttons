@@ -16,7 +16,8 @@
     "guss-grid-system": "~1.2.1",
     "guss-typography": "~3.0.0",
     "guss-webfonts": "~3.0.0",
-    "pasteup-palette": "~3.1.0"
+    "pasteup-palette": "~3.1.0",
+    "sass-mq": "~2.1.1"
   },
   "devDependencies": {
     "Cortana": "~1.2.7"

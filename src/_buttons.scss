@@ -250,7 +250,7 @@ Show more button:
 .button--small {
     @include button-height($gs-baseline * 2);
     @include fs-textSans(1);
-    line-height: $gs-baseline * 2 - 1px;
+    line-height: 2;
     font-weight: bold;
 }
 .button--xsmall {

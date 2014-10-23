@@ -71,10 +71,6 @@ Show more button:
     border-width: 1px;
     border-style: solid;
 
-    @include mq($from: desktop) {
-        line-height: $button-size + 2px;
-    }
-
     .i {
         width: $button-size;
         height: $button-size;
@@ -246,11 +242,15 @@ Show more button:
 }
 .button--medium {
     @include button-height($gs-baseline * 2.5);
+
+    @include mq($from: desktop) {
+        line-height: ($gs-baseline * 2.5) + 2px;
+    }
 }
 .button--small {
     @include button-height($gs-baseline * 2);
     @include fs-textSans(1);
-    line-height: $gs-baseline * 2 - 1px;
+    line-height: 2;
     font-weight: bold;
 }
 .button--xsmall {

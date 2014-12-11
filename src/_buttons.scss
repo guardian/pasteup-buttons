@@ -46,13 +46,27 @@ They come in different sizes:
 <a href="#" class="button button--small">Link to somewhere</a>
 <a href="#" class="button button--xsmall">Link to somewhere</a>
 ```
+
+Show more button:
+
+```html_example
+<button class="button button--medium button--show-more button--tertiary">
+    <i class="i i-plus-neutral1"></i>View more stories
+</button>
+```
 */
 
+$base-size: $gs-baseline / 2;
+
+/**
+ * 1. As on mobile devices we use Helvetica font which have a different baseline
+ *    we have to change line-height depending on resolution.
+ */
 @mixin button-height($button-size) {
     height: $button-size;
     padding: 0 ($button-size / 3);
     margin-right: $button-size / 3;
-    line-height: $button-size + 2px;
+    line-height: $button-size - 2px; /* [1] */
 
     .i {
         width: $button-size;
@@ -67,11 +81,11 @@ They come in different sizes:
     }
 }
 @mixin button-colour(
-    $fill-colour,
-    $text-colour,
-    $hover-colour,
-    $hover-border: $hover-colour,
-    $border-color: $fill-colour
+$fill-colour,
+$text-colour,
+$hover-colour,
+$hover-border: $hover-colour,
+$border-color: $fill-colour
 ) {
     color: $text-colour;
     background-color: $fill-colour;
@@ -102,14 +116,13 @@ They come in different sizes:
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-
-    @include button-height($gs-baseline * 2.5);
     @include fs-textSans(2);
+    @include button-height($base-size * 5);
     @include button-colour(
-        guss-colour(tone-news-2, $pasteup-palette),
+        guss-colour(news-main-2, $pasteup-palette),
         #ffffff,
-         guss-colour(tone-news-1, $pasteup-palette)
-     );
+        guss-colour(news-main-1, $pasteup-palette)
+    );
 
     &:hover,
     &:focus,
@@ -130,27 +143,24 @@ They come in different sizes:
     @include button-colour(
         guss-colour(guardian-brand, $pasteup-palette),
         #ffffff,
-        darken(guss-colour(news-main-1, $pasteup-palette), 10%)
+        darken(guss-colour(guardian-brand, $pasteup-palette), 10%)
     );
 }
 .button--secondary {
-    @include button-colour(guss-colour(neutral-2, $pasteup-palette), #ffffff, guss-colour(neutral-1, $pasteup-palette));
+    @include button-colour(
+        guss-colour(neutral-7, $pasteup-palette),
+        guss-colour(neutral-1, $pasteup-palette),
+        darken(guss-colour(neutral-7, $pasteup-palette), 10%)
+    );
 }
 .button--tertiary {
     @include button-colour(
         transparent,
-        guss-colour(neutral-2, $pasteup-palette),
+        guss-colour(neutral-1, $pasteup-palette),
         transparent,
-        guss-colour(neutral-3, $pasteup-palette)
+        darken(guss-colour(neutral-3, $pasteup-palette), 10%),
+        guss-colour(neutral-4, $pasteup-palette)
     );
-    border-color: guss-colour(neutral-3, $pasteup-palette);
-
-    &:hover,
-    &:focus,
-    &:active {
-        color: guss-colour(neutral-1, $pasteup-palette);
-        border-color: guss-colour(neutral-1, $pasteup-palette);
-    }
 }
 .button--tone-media {
     @include button-colour(
@@ -181,7 +191,7 @@ They come in different sizes:
         guss-colour(news-main-1, $pasteup-palette),
         #ffffff,
         darken(guss-colour(neutral-3, $pasteup-palette), 10%),
-        guss-colour(neutral-5, $pasteup-palette)
+        guss-colour(neutral-4, $pasteup-palette)
     );
 }
 .button--tone-feature {
@@ -197,7 +207,7 @@ They come in different sizes:
         guss-colour(features-support-1, $pasteup-palette),
         #ffffff,
         darken(guss-colour(neutral-3, $pasteup-palette), 10%),
-        guss-colour(neutral-3, $pasteup-palette)
+        guss-colour(neutral-4, $pasteup-palette)
     );
 }
 .button--tone-comment {
@@ -213,20 +223,20 @@ They come in different sizes:
         guss-colour(comment-main-1, $pasteup-palette),
         #ffffff,
         darken(guss-colour(neutral-3, $pasteup-palette), 10%),
-        guss-colour(neutral-3, $pasteup-palette)
+        guss-colour(neutral-4, $pasteup-palette)
     );
 }
 .button--tone-live {
     @include button-colour(
         guss-colour(neutral-6, $pasteup-palette),
-        guss-colour(news-main-1, $pasteup-palette),
+        guss-colour(neutral-1, $pasteup-palette),
         darken(guss-colour(neutral-6, $pasteup-palette), 10%)
     );
 }
 .button--tone-live-variant {
     @include button-colour(
         guss-colour(neutral-8, $pasteup-palette),
-        guss-colour(news-main-1, $pasteup-palette),
+        guss-colour(neutral-1, $pasteup-palette),
         guss-colour(neutral-8, $pasteup-palette),
         darken(guss-colour(neutral-3, $pasteup-palette), 10%),
         guss-colour(neutral-3, $pasteup-palette)
@@ -236,20 +246,47 @@ They come in different sizes:
     @include button-height(44px);
 }
 .button--large {
-    @include button-height($gs-baseline * 3);
+    @include button-height($base-size * 6);
+
+    @include mq($from: desktop) {
+        line-height: ($base-size * 6) + 2;
+    }
 }
 .button--medium {
-    @include button-height($gs-baseline * 2.5);
+    @include button-height($base-size * 5);
+
+    @include mq($from: desktop) {
+        line-height: ($base-size * 5) + 2px;
+    }
 }
 .button--small {
-    @include button-height($gs-baseline * 2);
+    @include button-height($base-size * 4);
     @include fs-textSans(1);
-    line-height: $gs-baseline * 2 - 1px;
+    line-height: $gs-baseline * 2 - 2px;
     font-weight: bold;
 }
 .button--xsmall {
-    @include button-height($gs-baseline * 1.5);
+    @include button-height($base-size * 3);
     @include fs-textSans(1);
-    line-height: $gs-baseline * 1.5 - 1px;
+    line-height: ($base-size * 3) - 2px;
     font-weight: bold;
+}
+
+$show-more-icon-size: $base-size * 4;
+$show-more-icon-spacing: $base-size + 1;
+
+.button--show-more {
+    position: relative;
+    padding-left: $show-more-icon-size + $show-more-icon-spacing * 2;
+
+    .i {
+        width: $show-more-icon-size;
+        height: $show-more-icon-size;
+        vertical-align: middle;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: $show-more-icon-spacing;
+    }
 }

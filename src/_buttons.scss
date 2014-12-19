@@ -75,9 +75,11 @@ $base-size: $gs-baseline / 2;
     }
     .i-left {
         margin-left: -($button-size / 3);
+        margin-right: 0;
     }
     .i-right {
         margin-right: -($button-size / 3);
+        margin-left: 0;
     }
 }
 @mixin button-colour(

@@ -107,9 +107,9 @@ Show more button:
 }
 .button--secondary {
     @include button-colour(
-        guss-colour(neutral-7, $pasteup-palette),
+        guss-colour(neutral-6, $pasteup-palette),
         guss-colour(neutral-1, $pasteup-palette),
-        darken(guss-colour(neutral-7, $pasteup-palette), 10%)
+        darken(guss-colour(neutral-6, $pasteup-palette), 10%)
     );
 }
 .button--tertiary {
@@ -139,9 +139,9 @@ Show more button:
 }
 .button--tone-news {
     @include button-colour(
-        guss-colour(neutral-7, $pasteup-palette),
+        guss-colour(neutral-6, $pasteup-palette),
         guss-colour(news-main-1, $pasteup-palette),
-        darken(guss-colour(neutral-7, $pasteup-palette), 10%)
+        darken(guss-colour(neutral-6, $pasteup-palette), 10%)
     );
 }
 .button--tone-news-variant {
@@ -155,9 +155,9 @@ Show more button:
 }
 .button--tone-feature {
     @include button-colour(
-        guss-colour(neutral-7, $pasteup-palette),
+        guss-colour(neutral-6, $pasteup-palette),
         guss-colour(features-support-1, $pasteup-palette),
-        darken(guss-colour(neutral-7, $pasteup-palette), 10%)
+        darken(guss-colour(neutral-6, $pasteup-palette), 10%)
     );
 }
 .button--tone-feature-variant {
@@ -171,9 +171,9 @@ Show more button:
 }
 .button--tone-comment {
     @include button-colour(
-        guss-colour(neutral-7, $pasteup-palette),
+        guss-colour(neutral-6, $pasteup-palette),
         guss-colour(comment-main-1, $pasteup-palette),
-        darken(guss-colour(neutral-7, $pasteup-palette), 10%)
+        darken(guss-colour(neutral-6, $pasteup-palette), 10%)
     );
 }
 .button--tone-comment-variant {

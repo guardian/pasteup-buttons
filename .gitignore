@@ -4,4 +4,4 @@
 
 bower_components
 docs
-node_modules
+node_modules!.github
